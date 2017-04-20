@@ -10,6 +10,7 @@ url('../fonts/icomoon.svg?6s6d3k#icomoon') format('svg');font-weight:normal;font
 body{margin:0;font-family:sans-serif;display:flex;flex-direction:column;}
 a{text-decoration:none;}
 .titulo{font-size:60px;color:white;margin-bottom:2px;text-shadow:1px 1px 1px #000;}
+.hidden{display: none !important;visibility: hidden !important;}
 .frase{color:#fff;font-size:25px;margin-top:2px;text-shadow:1px 1px 1px #000;}
 .botones{padding-bottom:170px;}
 .boton{font-size:12px;font-weight:bold;color:white;background:#00bff3;padding:10px;border:1px solid transparent;border-radius:4px;height:50px;width:182px;text-transform:uppercase;margin-left:20px;cursor:pointer;transition:0.8s;}
@@ -57,7 +58,9 @@ a{text-decoration:none;}
 .text-input:-moz-placeholder{color:#fff;font-weight:bold;}
 .text-input:-ms-input-placeholder{color:#fff;font-weight:bold;}
 textarea.text-input{border-radius:0px !important;height:150px;padding-top:5px;resize:none;}
-.boton-enviar{border:1px solid #fff;border-radius:10px;background:#00bbee;color:white;margin:30px;font-size:18px;padding:0px 15px;height:50px;width:150px;transition:0.9;}
+.boton-enviar{border:1px solid #fff;border-radius:10px;background:#00bbee;color:white;margin:30px;font-size:18px;padding:0px 15px;height:50px;width:150px;transition:0.9;cursor:pointer;}
+.errors-text{display: table-cell;vertical-align: middle;}
+.errors-message{background:#f9f8f8;color:#323c46;display:table;margin:auto;margin-top:10px;font-size:16px;height:70px;width:50%;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius: 4px;-khtml-border-radius:4px;}
 .boton-enviar:hover{background:#fff;color:#00bbee;}
 .informacion{text-align:left;font-size:18px;max-width:1000px;margin:auto;}
 .footer{position:relative;padding:5px;}
@@ -138,6 +141,7 @@ textarea.text-input{border-radius:0px !important;height:150px;padding-top:5px;re
 .precio{width:50%;}
 .servicio2{margin-bottom:10px;}
 .burguer-button{display:block;}
+.errors-message{width:60%;}
 }
 @media screen and (max-width:500px){.boton{font-size:9px;height:30px;width:120px;}
 .botones{padding-bottom:54px;}
@@ -151,4 +155,5 @@ textarea.text-input{border-radius:0px !important;height:150px;padding-top:5px;re
 .pricing-table{font-size:12px;}
 .pricing-table .description{font-size:12px;}
 .texto-plan2 p{height:auto;}
+.errors-message{width:90%;height:50px;}
 }

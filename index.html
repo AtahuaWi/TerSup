@@ -6,6 +6,8 @@
         <meta name="description" content="Clases Particulares a Domicilio. clases particulares de matemática.">
         <link rel="stylesheet" href="css/main.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/app.min.js"></script>
         <!--<meta name="viewport" content="width=device-width, initial-scale=1.0" id="mobileViewport">-->
     
         <title >Tercio Superior - Clases Particulares a Domicilio </title>
@@ -158,13 +160,29 @@
               <div class="container-formulario" >
                   
                   <form action="" class="formulario">
-                      <input type="text" placeholder="Nombre" id="nombre" class="text-input">
-                      <input type="email" placeholder="E-mail" class="text-input">
-                      <input placeholder="Teléfono o Celular" class="text-input">
-                      <input type="text" placeholder="Distrito" class="text-input">
-                      <textarea name="mensaje" id=""  placeholder="Mensaje" class="text-input"></textarea>
-                      <button type="button" onclick="sendContactEmail" class="boton-enviar"><span>Enviar</span></button>
+                      <input type="text" placeholder="Nombre" id="name_contact" class="text-input">
+                      <input type="email" placeholder="E-mail" id="email_contact" class="text-input">
+                      <input placeholder="Teléfono o Celular" id="celular_contact" class="text-input">
+                      <input type="text" placeholder="Distrito" id="distrito_contact" class="text-input">
+                      <textarea name="mensaje" id="message_contact"  placeholder="Mensaje" class="text-input"></textarea>
+                      <div class="text-center">
+                            <div id="contactErrorDiv" class="errors-wrapper hidden">
+                                <div class="col-sm-10 col-sm-offset-1">
+                                    <div class="errors-message">
+                                        
+                                        <div class="errors-text"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center"><span id="contactResultDiv" class="contact-result hidden">Gracias. Un asesor le responderá pronto.</span></div>
+                            <div>
+                                <button id="sendContactEmailButton-home" onclick="sendContactEmail()" type="button" class="boton-enviar" data-style="expand-right"><span>Enviar</span></button>
+                            </div>
+                        </div>
+                      
                   </form>
+                  
+                  
               </div>
           </section>
           <footer id="footer" class="footer contenedor-footer">
@@ -199,8 +217,7 @@
               };
               
           </script>
-          <script src="js/app.min.js">
-          </script>
+          
           
     </body>
 </html>
